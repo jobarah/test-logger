@@ -1,0 +1,14 @@
+{
+  "name": "aderant-logger",
+  "version": "1.0.0",
+  "description": "Logger abstraction that centralizes the logging libraries used across aderant projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aderant",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/logger": "^1.0.4"
+  }
+}

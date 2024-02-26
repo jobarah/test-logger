@@ -1,0 +1,25 @@
+# full builds
+lib/
+
+# npm dependencies
+node_modules/
+npm_cache/
+npm-debug.log*
+
+# misc
+CHANGES.md
+.DS_Store
+.vscode
+.idea
+
+
+# ts build artifacts
+tsconfig.tsbuildinfo
+
+# certs
+*.pfx
+*.key
+*.pem
+
+/.vs/VSWorkspaceState.json
+/.vs/MergedGuidelinesAndOCG/v17
