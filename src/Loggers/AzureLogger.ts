@@ -1,24 +1,15 @@
-import { EventHubClient } from '@azure/event-hubs';
 import logger from '@azure/logger';
-import ILogger from '../ILogger';
+import BaseLogger from '../BaseLogger';
 
 logger.setLogLevel('info');
 
-// operations will now emit info, warning, and error logs
-const client = new EventHubClient(/* params */);
-
 const testLogger = logger.createClientLogger("test");
 
-client.getPartitionIds()
-  .then(ids => { /* do work */ })
-  .catch(e => { /* do work */ });
-
-class AzureLogger extends ILogger {
+class AzureLogger extends BaseLogger {
 
   constructor(env: string, options: any) {
-    // super(loggerClient(env, options))
     super(env, options);
-    this.loggerClient = client.createLogger(this.env, this.options);
+    this.loggerClient = testLogger.createLogger(this.env, this.options);
   }
 
   log(message: string): void {
