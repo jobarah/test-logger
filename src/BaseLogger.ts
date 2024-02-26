@@ -1,16 +1,9 @@
-import LoggerInterface from './LoggerInterface';
+import LoggerInterface from './ILogger';
 
 abstract class ILogger implements LoggerInterface {
-
-  // logger: LoggerInterface;
   env: string;
   options: Record<string, string>;
   loggerClient: ILogger;
-
-  /*
-    constructor(loggingLibraryInstance: LoggerInterface)
-    export default Logger = new AderantLogger(supportedLoggers[env](options));
-  */
 
   constructor(env: string, options: any) {
     this.env = env;

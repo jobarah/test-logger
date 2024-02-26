@@ -1,5 +1,5 @@
 import SupportedLoggers from "./SupportedLoggers";
-import ILogger from "./ILogger";
+import ILogger from "./BaseLogger";
 
 export class AderantLogger {
 
