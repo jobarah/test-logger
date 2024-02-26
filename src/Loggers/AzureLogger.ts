@@ -1,6 +1,6 @@
 import { EventHubClient } from '@azure/event-hubs';
 import logger from '@azure/logger';
-import ILogger from './ILogger';
+import ILogger from '../ILogger';
 
 logger.setLogLevel('info');
 
