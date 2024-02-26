@@ -1,4 +1,7 @@
-import { AzureLogger } from '@azure/logger';
+import {
+  AzureLogger,
+  // other loggers
+} from './Loggers/index';
 
 const SupportedLoggers = {
   'web': AzureLogger,
