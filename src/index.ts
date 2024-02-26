@@ -1,4 +1,3 @@
-import { AzureLogger } from "@azure/logger";
 import SupportedLoggers from "./SupportedLoggers";
 import ILogger from "./ILogger";
 
