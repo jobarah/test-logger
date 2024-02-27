@@ -1,9 +1,9 @@
-import Il from './ILogger';
+import ILogger from './ILogger';
 
-abstract class BaseLogger implements Il {
+abstract class BaseLogger implements ILogger {
   env: string;
   options: Record<string, string>;
-  loggerClient: BaseLogger;
+  loggerClient: ILogger;
 
   constructor(env: string, options: any) {
     this.env = env;
