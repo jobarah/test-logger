@@ -1,9 +1,9 @@
-import LoggerInterface from './ILogger';
+import Il from './ILogger';
 
-abstract class ILogger implements LoggerInterface {
+abstract class BaseLogger implements Il {
   env: string;
   options: Record<string, string>;
-  loggerClient: ILogger;
+  loggerClient: BaseLogger;
 
   constructor(env: string, options: any) {
     this.env = env;
@@ -19,4 +19,4 @@ abstract class ILogger implements LoggerInterface {
   abstract error(message: string): void;
 }
 
-export default ILogger;
+export default BaseLogger;
