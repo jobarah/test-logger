@@ -11,9 +11,9 @@ export class AderantLogger {
 
   createLogger(env: string, options: Record<string, string>): ILogger {
     if (SupportedLoggers[this.serviceName]) {
-      return new SupportedLoggers[this.serviceName](env, options);
+      return SupportedLoggers[this.serviceName]({ env, options });
     }
 
-    return new console.log(env, options);
+    throw new Error(`Logger for ${this.serviceName} is not supported`);
   }
 }

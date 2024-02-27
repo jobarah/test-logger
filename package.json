@@ -10,5 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "@azure/logger": "^1.0.4"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack-cli": "^5.1.4"
   }
 }
