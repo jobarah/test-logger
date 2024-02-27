@@ -10,13 +10,13 @@ abstract class ILogger implements LoggerInterface {
     this.options = options;
   }
 
-  log(message: string): void {}
+  abstract log(message: string): void;
 
-  info(message: string): void {}
+  abstract info(message: string): void;
 
-  warning(message: string): void {}
+  abstract warning(message: string): void;
 
-  error(message: string): void {}
+  abstract error(message: string): void;
 }
 
 export default ILogger;
